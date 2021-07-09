@@ -22,6 +22,7 @@ public class User {
     public String getLogin() { return login; }
     public String getAvatarUrl() { return avatarUrl; }
 
+
     /**
      * Generate random user
      */

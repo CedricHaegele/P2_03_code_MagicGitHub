@@ -7,5 +7,5 @@ import java.util.List;
 public interface ApiService {
     List<User> getUsers();
     void generateRandomUser();
-    void deleteUser(User username);
+    void deleteUser(User user);
 }

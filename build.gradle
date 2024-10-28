@@ -10,13 +10,18 @@ buildscript {
     ext.rxjava2_android_version = '2.0.2'
     ext.rxjava2_version = '2.1.9'
     ext.butterknife_version = '10.0.0'
-
+    // Ajoutez cette configuration pour utiliser Java 11
+    ext.java_version = JavaVersion.VERSION_11
+    
     repositories {
         google()
         mavenCentral()
-                    }
+        // Évitez d'utiliser jcenter() car il est déprécié
+    }
+    
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.2'
+        // Assurez-vous d'utiliser la dernière version stable
+        classpath 'com.android.tools.build:gradle:7.4.2' // Version compatible avec Java 8
     }
 }
 
@@ -26,7 +31,13 @@ allprojects {
         mavenCentral()
         gradlePluginPortal()
             }
+    // Ajoutez cette configuration au niveau du projet
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = java_version
+        targetCompatibility = java_version
+    }
 }
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

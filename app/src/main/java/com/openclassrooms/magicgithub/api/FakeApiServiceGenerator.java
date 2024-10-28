@@ -15,33 +15,33 @@ public abstract class FakeApiServiceGenerator {
     }
 
     public static List<User> FAKE_USERS = Arrays.asList(
-            new User("001", "Jake", "https://api.adorable.io/AVATARS/512/1.png"),
-            new User("002", "Paul", "https://api.adorable.io/AVATARS/512/2.png"),
-            new User("003", "Phil", "https://api.adorable.io/AVATARS/512/3.png"),
-            new User("004", "Guillaume", "https://api.adorable.io/AVATARS/512/4.png"),
-            new User("005", "Francis", "https://api.adorable.io/AVATARS/512/5.png"),
-            new User("006", "George", "https://api.adorable.io/AVATARS/512/6.png"),
-            new User("007", "Louis", "https://api.adorable.io/AVATARS/512/7.png"),
-            new User("008", "Mateo", "https://api.adorable.io/AVATARS/512/8.png"),
-            new User("009", "April", "https://api.adorable.io/AVATARS/512/9.png"),
-            new User("010", "Louise", "https://api.adorable.io/AVATARS/512/10.png"),
-            new User("011", "Elodie", "https://api.adorable.io/AVATARS/512/11.png"),
-            new User("012", "Helene", "https://api.adorable.io/AVATARS/512/12.png"),
-            new User("013", "Fanny", "https://api.adorable.io/AVATARS/512/13.png"),
-            new User("014", "Laura", "https://api.adorable.io/AVATARS/512/14.png"),
-            new User("015", "Gertrude", "https://api.adorable.io/AVATARS/512/15.png"),
-            new User("016", "Chloé", "https://api.adorable.io/AVATARS/512/16.png"),
-            new User("017", "April", "https://api.adorable.io/AVATARS/512/17.png"),
-            new User("018", "Marie", "https://api.adorable.io/AVATARS/512/18.png"),
-            new User("019", "Henri", "https://api.adorable.io/AVATARS/512/19.png"),
-            new User("020", "Rémi", "https://api.adorable.io/AVATARS/512/20.png")
+            new User("001", "Jake", "https://avatars.githubusercontent.com/u/1?v=4"),
+            new User("002", "Paul", "https://avatars.githubusercontent.com/u/2?v=4"),
+            new User("003", "Phil", "https://avatars.githubusercontent.com/u/3?v=4"),
+            new User("004", "Guillaume", "https://avatars.githubusercontent.com/u/4?v=4"),
+            new User("005", "Francis", "https://avatars.githubusercontent.com/u/5?v=4"),
+            new User("006", "George", "https://avatars.githubusercontent.com/u/6?v=4"),
+            new User("007", "Louis", "https://avatars.githubusercontent.com/u/7?v=4"),
+            new User("008", "Mateo", "https://avatars.githubusercontent.com/u/8?v=4"),
+            new User("009", "April", "https://avatars.githubusercontent.com/u/9?v=4"),
+            new User("010", "Louise", "https://avatars.githubusercontent.com/u/10?v=4"),
+            new User("011", "Elodie", "https://avatars.githubusercontent.com/u/11?v=4"),
+            new User("012", "Helene", "https://avatars.githubusercontent.com/u/12?v=4"),
+            new User("013", "Fanny", "https://avatars.githubusercontent.com/u/13?v=4"),
+            new User("014", "Laura", "https://avatars.githubusercontent.com/u/14?v=4"),
+            new User("015", "Gertrude", "https://avatars.githubusercontent.com/u/15?v=4"),
+            new User("016", "Chloé", "https://avatars.githubusercontent.com/u/16?v=4"),
+            new User("017", "April", "https://avatars.githubusercontent.com/u/17?v=4"),
+            new User("018", "Marie", "https://avatars.githubusercontent.com/u/18?v=4"),
+            new User("019", "Henri", "https://avatars.githubusercontent.com/u/19?v=4"),
+            new User("020", "Rémi", "https://avatars.githubusercontent.com/u/20?v=4")
     );
 
     public static List<User> FAKE_USERS_RANDOM = Arrays.asList(
-            new User("021", "Lea", "https://api.adorable.io/AVATARS/512/21.png"),
-            new User("022", "Geoffrey", "https://api.adorable.io/AVATARS/512/22.png"),
-            new User("023", "Simon", "https://api.adorable.io/AVATARS/512/23.png"),
-            new User("024", "André", "https://api.adorable.io/AVATARS/512/24.png"),
-            new User("025", "Leopold", "https://api.adorable.io/AVATARS/512/25.png")
+            new User("021", "Lea", "https://avatars.githubusercontent.com/u/21?v=4"),
+            new User("022", "Geoffrey", "https://avatars.githubusercontent.com/u/22?v=4"),
+            new User("023", "Simon", "https://avatars.githubusercontent.com/u/23?v=4"),
+            new User("024", "André", "https://avatars.githubusercontent.com/u/24?v=4"),
+            new User("025", "Leopold", "https://avatars.githubusercontent.com/u/25?v=4")
     );
 }

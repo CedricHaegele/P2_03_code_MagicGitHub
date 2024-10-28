@@ -1,8 +1,6 @@
 package com.openclassrooms.magicgithub.ui.user_list;
 
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -10,22 +8,28 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.openclassrooms.magicgithub.base.BaseActivity;
 import com.openclassrooms.magicgithub.R;
 import com.openclassrooms.magicgithub.model.User;
+import com.openclassrooms.magicgithub.databinding.ActivityListUserBinding;
 
 public class ListUserActivity extends BaseActivity implements UserListAdapter.Listener {
 
-    // FOR DESIGN ---
-    RecyclerView recyclerView;
-    FloatingActionButton fab;
+    // ViewBinding au lieu de Butterknife
+    private ActivityListUserBinding binding;
+    private RecyclerView recyclerView;
+    private FloatingActionButton fab;
 
-    // FOR DATA ---
     private UserListAdapter adapter;
-
-    // OVERRIDE ---
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_user);
+        // Initialisation du ViewBinding
+        binding = ActivityListUserBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        
+        // Récupération des vues
+        recyclerView = binding.activityListUserRv;
+        fab = binding.activityListUserFab;
+        
         configureFab();
         configureRecyclerView();
     }
@@ -36,16 +40,12 @@ public class ListUserActivity extends BaseActivity implements UserListAdapter.Li
         loadData();
     }
 
-    // CONFIGURATION ---
-
     private void configureRecyclerView() {
-        recyclerView = findViewById(R.id.activity_list_user_rv);
         adapter = new UserListAdapter(this);
         recyclerView.setAdapter(adapter);
     }
 
     private void configureFab() {
-        fab = findViewById(R.id.activity_list_user_fab);
         fab.setOnClickListener(view -> {
             getUserRepository().generateRandomUser();
             loadData();
@@ -56,11 +56,9 @@ public class ListUserActivity extends BaseActivity implements UserListAdapter.Li
         adapter.updateList(getUserRepository().getUsers());
     }
 
-    // ACTIONS ---
-
     @Override
     public void onClickDelete(User user) {
-        Log.d(ListUserActivity.class.getName(), "User tries to delete a item.");
+        Log.d(ListUserActivity.class.getName(), "User tries to delete an item.");
         getUserRepository().deleteUser(user);
         loadData();
     }

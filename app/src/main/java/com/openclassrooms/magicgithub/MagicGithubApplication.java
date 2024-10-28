@@ -7,6 +7,10 @@ import com.openclassrooms.magicgithub.repository.UserRepository;
 
 import androidx.annotation.VisibleForTesting;
 
+/**
+ * Point d'entrée principal de l'application
+ * Cette classe est instanciée en premier lors du démarrage de l'app
+ */
 public class MagicGithubApplication extends Application {
 
     private UserRepository userRepository;

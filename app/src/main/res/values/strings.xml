@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MagicGithub</string>
+    
+    <!-- Description pour l'accessibilité de l'avatar utilisateur -->
+    <string name="user_avatar_description">Avatar de l\'utilisateur</string>
+    
+    <!-- Autres chaînes de caractères existantes -->
 </resources>

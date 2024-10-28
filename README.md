@@ -9,5 +9,8 @@ MagIC Github est une application Android qui permet de lister, ajouter et suppri
 - Gradle 7.4.2
 - Un appareil Android ou émulateur avec API 21 minimum
 
+  ![image](https://github.com/user-attachments/assets/9f00e39e-df2b-4083-a6e4-92deea187deb)
+
+
 ## 🚀 Installation
 1. Clonez le repository :
